@@ -10,4 +10,10 @@ const githubApi = axios.create({
   },
 });
 
+
+export const fetchUserData = async (username) => {
+  const response = await githubApi.get(`/users/${username}`);
+  return response.data;
+};
+
 export default githubApi;
