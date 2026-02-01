@@ -31,6 +31,7 @@ const Search = () => {
     } finally {
       setLoading(false);
     }
+    fetchUserData
   };
 
   const loadMore = async () => {
