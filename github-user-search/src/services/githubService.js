@@ -24,6 +24,7 @@ export const fetchAdvancedUsers = async ({
       per_page: 10,
     },
   });
+  https://api.github.com/search/users?q
 
   return response.data;
 };
