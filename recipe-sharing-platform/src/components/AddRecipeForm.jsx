@@ -120,7 +120,7 @@ function AddRecipeForm() {
                        hover:bg-blue-700 transition duration-300 
                        font-semibold" 
           >
-            Submit Recipe "validate"
+            Submit Recipe "validate" md
           </button>
 
         </form>
