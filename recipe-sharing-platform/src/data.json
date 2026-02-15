@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Spaghetti Bolognese",
+    "summary": "A rich and hearty Italian pasta dish made with slow-cooked beef, tomatoes, and herbs.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": 2,
+    "title": "Grilled Chicken Caesar Salad",
+    "summary": "Crisp romaine lettuce tossed with creamy Caesar dressing, grilled chicken, and parmesan.",
+    "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9"
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Stir Fry",
+    "summary": "A colorful mix of fresh vegetables sautéed in a savory soy-ginger sauce.",
+    "image": "https://images.unsplash.com/photo-1512058564366-c9e3e0463d3b"
+  },
+  {
+    "id": 4,
+    "title": "Chocolate Lava Cake",
+    "summary": "A decadent dessert with a molten chocolate center and a soft cake exterior.",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476f"
+  }
+]
