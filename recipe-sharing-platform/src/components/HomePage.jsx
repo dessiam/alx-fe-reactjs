@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import recipesData from "../data.json";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
@@ -15,32 +16,31 @@ function HomePage() {
       </h1>
 
       {/* Responsive Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {recipes.map((recipe) => (
-          <div
-            key={recipe.id}
-            className="bg-white rounded-xl shadow-md overflow-hidden 
-                       transform transition duration-300 hover:scale-105 
-                       hover:shadow-2xl cursor-pointer"
-          >
-            {/* Image */}
-            <img
-              src={recipe.image}
-              alt={recipe.title}
-              className="w-full h-48 object-cover"
-            />
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {recipes.map((recipe) => (
+          <Link to={`/recipe/${recipe.id}`} key={recipe.id}>
+            <div
+              className="bg-white rounded-xl shadow-md overflow-hidden 
+                        transform transition duration-300 hover:scale-105 
+                        hover:shadow-2xl cursor-pointer"
+            >
+              <img
+                src={recipe.image}
+                alt={recipe.title}
+                className="w-full h-48 object-cover"
+              />
 
-            {/* Content */}
-            <div className="p-4">
-              <h2 className="text-lg font-semibold mb-2">
-                {recipe.title}
-              </h2>
+              <div className="p-4">
+                <h2 className="text-lg font-semibold mb-2">
+                  {recipe.title}
+                </h2>
 
-              <p className="text-gray-600 text-sm">
-                {recipe.summary}
-              </p>
+                <p className="text-gray-600 text-sm">
+                  {recipe.summary}
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

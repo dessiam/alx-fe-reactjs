@@ -3,24 +3,86 @@
     "id": 1,
     "title": "Classic Spaghetti Bolognese",
     "summary": "A rich and hearty Italian pasta dish made with slow-cooked beef, tomatoes, and herbs.",
-    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    "ingredients": [
+      "400g spaghetti",
+      "500g ground beef",
+      "1 onion (finely chopped)",
+      "2 cloves garlic (minced)",
+      "400g canned tomatoes",
+      "2 tablespoons tomato paste",
+      "2 tablespoons olive oil",
+      "1 teaspoon dried oregano",
+      "1 teaspoon dried basil",
+      "Salt and black pepper to taste",
+      "Grated Parmesan cheese (optional)"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to a boil and cook spaghetti according to package instructions. Drain and set aside.",
+      "Heat olive oil in a large pan over medium heat.",
+      "Add chopped onion and cook until soft and translucent.",
+      "Add minced garlic and cook for 1 minute.",
+      "Add ground beef and cook until browned, breaking it apart with a spoon.",
+      "Stir in tomato paste, canned tomatoes, oregano, and basil.",
+      "Season with salt and black pepper.",
+      "Reduce heat and let the sauce simmer for 20–25 minutes.",
+      "Serve the sauce over cooked spaghetti and top with grated Parmesan."
+    ]
   },
   {
     "id": 2,
-    "title": "Grilled Chicken Caesar Salad",
-    "summary": "Crisp romaine lettuce tossed with creamy Caesar dressing, grilled chicken, and parmesan.",
-    "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9"
+    "title": "Grilled Chicken Salad",
+    "summary": "A healthy and refreshing salad with grilled chicken, fresh vegetables, and a light vinaigrette.",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141",
+    "ingredients": [
+      "2 boneless, skinless chicken breasts",
+      "4 cups mixed salad greens",
+      "1 cup cherry tomatoes (halved)",
+      "1 cucumber (sliced)",
+      "1/2 red onion (thinly sliced)",
+      "1 avocado (sliced)",
+      "2 tablespoons olive oil",
+      "1 tablespoon lemon juice",
+      "1 teaspoon Dijon mustard",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Season chicken breasts with salt and black pepper.",
+      "Heat a grill pan over medium-high heat and brush with olive oil.",
+      "Grill chicken for 6–7 minutes per side or until fully cooked.",
+      "Remove from heat and let rest for 5 minutes before slicing.",
+      "In a large bowl, combine salad greens, cherry tomatoes, cucumber, red onion, and avocado.",
+      "In a small bowl, whisk together olive oil, lemon juice, and Dijon mustard.",
+      "Add sliced grilled chicken on top of the salad.",
+      "Drizzle dressing over the salad and toss gently before serving."
+    ]
   },
   {
     "id": 3,
-    "title": "Vegetable Stir Fry",
-    "summary": "A colorful mix of fresh vegetables sautéed in a savory soy-ginger sauce.",
-    "image": "https://images.unsplash.com/photo-1512058564366-c9e3e0463d3b"
-  },
-  {
-    "id": 4,
-    "title": "Chocolate Lava Cake",
-    "summary": "A decadent dessert with a molten chocolate center and a soft cake exterior.",
-    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476f"
+    "title": "Fluffy Pancakes",
+    "summary": "Light and fluffy homemade pancakes perfect for breakfast or brunch.",
+    "image": "https://images.unsplash.com/photo-1587731882598-8a00f3f4e1d5",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "3 1/2 teaspoons baking powder",
+      "1 tablespoon sugar",
+      "1/2 teaspoon salt",
+      "1 1/4 cups milk",
+      "1 egg",
+      "3 tablespoons melted butter",
+      "1 teaspoon vanilla extract",
+      "Butter or oil for cooking",
+      "Maple syrup for serving"
+    ],
+    "instructions": [
+      "In a large bowl, whisk together flour, baking powder, sugar, and salt.",
+      "In another bowl, beat the egg and mix with milk, melted butter, and vanilla extract.",
+      "Pour the wet ingredients into the dry ingredients and mix until just combined (do not overmix).",
+      "Heat a non-stick pan over medium heat and lightly grease with butter or oil.",
+      "Pour about 1/4 cup of batter onto the pan for each pancake.",
+      "Cook until bubbles form on the surface (about 2 minutes).",
+      "Flip and cook the other side until golden brown.",
+      "Serve warm with maple syrup and your favorite toppings."
+    ]
   }
 ]
