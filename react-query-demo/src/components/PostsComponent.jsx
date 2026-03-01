@@ -1,5 +1,20 @@
-import React from "react";
 import { useQuery } from "@tanstack/react-query";
+
+/* Required fetch function */
+const fetchPosts = async () => {
+
+  console.log("Fetching from API...");
+
+  const response = await fetch(
+    "https://jsonplaceholder.typicode.com/posts"
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch posts");
+  }
+
+  return response.json();
+};
 
 function PostsComponent() {
 
@@ -8,22 +23,11 @@ function PostsComponent() {
     isLoading,
     isError,
     error,
-    refetch
+    refetch,
+    dataUpdatedAt
   } = useQuery({
     queryKey: ["posts"],
-    queryFn: async () => {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts"
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to fetch posts");
-      }
-
-      return response.json();
-    },
-
-    // Keeps data cached for demonstration
+    queryFn: fetchPosts,
     staleTime: 60000
   });
 
@@ -38,7 +42,12 @@ function PostsComponent() {
 
       <h2>Posts</h2>
 
-      {/* Refetch Button */}
+      <p>
+        Last fetched:
+        {" "}
+        {new Date(dataUpdatedAt).toLocaleTimeString()}
+      </p>
+
       <button onClick={() => refetch()}>
         Refetch Posts
       </button>
