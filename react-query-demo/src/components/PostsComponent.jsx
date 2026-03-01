@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 
-/* Required fetch function */
+/* Fetch function */
 const fetchPosts = async () => {
 
   console.log("Fetching from API...");
@@ -28,7 +28,12 @@ function PostsComponent() {
   } = useQuery({
     queryKey: ["posts"],
     queryFn: fetchPosts,
-    staleTime: 60000
+
+    /* Required caching options */
+    staleTime: 60000,
+    cacheTime: 300000,
+    refetchOnWindowFocus: false,
+    keepPreviousData: true
   });
 
 
